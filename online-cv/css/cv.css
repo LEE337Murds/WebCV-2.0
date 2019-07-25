@@ -1,0 +1,167 @@
+body {background:rgb(55, 100, 100);
+      font-family: 'opensans-regular', sans-serif;
+     } 
+
+h1 {  color: white;
+      font-family: 'Tangerine', cursive;
+      font-size: 70px;
+      font-weight: bold;
+      text-align: center;
+      }
+
+h2 {text-align: center;
+      color: white;
+      }
+
+h3 {color: rgba(24, 22, 22, 0.863);
+      font-size: 40px;
+      font-weight: bold;
+      text-decoration: underline;
+      margin-left: -90px;
+}
+
+h4 {color: rgb(51, 48, 48)}
+   
+header::before {background-image: url(http://www.princesswithabackpack.com/wp-content/uploads/2012/01/cape-grace.jpg); alt: Backdrop;
+                display: block;
+                background-size: cover;
+                content: "";
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: -2;
+                opacity: 0.4;
+            }
+
+header{height: 100vh;
+       /*background-size: cover; 
+       background-image: url(http://www.princesswithabackpack.com/wp-content/uploads/2012/01/cape-grace.jpg);*/
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       
+       margin-bottom: 30px;
+      }
+
+header p {color: white; text-align: center}
+
+hr{border-style: solid; border-color: white }
+
+#aboutMe {text-align: left;
+          margin: 50px 0px 0px 100px;
+          font-size: 40px;
+          font-family:  'opensans-regular', sans-serif;
+          color: white;
+        }
+.clearfix::after {content: "";
+                  clear: both;
+                  display: table} 
+                  
+
+#pElement {width: 40%;
+          text-align: left;
+          margin-left: 15px;
+          color: white;
+          float: right
+        } 
+                
+#floatImage {float: left;
+            width: 40%} 
+.image-cropper {
+          width: 300px;
+          height: 300px;
+          position: relative;
+          overflow: hidden;
+          border-radius: 50%;
+      }
+.profile-pic {
+        display: inline;
+        margin: 0 auto;
+        margin-left: -50%; 
+        height: 100%;
+        width: auto;
+      }   
+
+
+#experience {     background: white;
+                  background-size: cover;
+                  padding: 30px 100px 30px 200px;
+                  font-family: 'opensans-regular', sans-serif;
+                  color: #838C95
+                  
+            }
+
+
+
+
+      
+#flexParent {text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+      
+            }
+
+.flexChild {background: rgb(228, 222, 220);
+            margin: 20px;
+            display: flex;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            padding: 20px; 
+            text-align: center
+            }
+ 
+.flexChild:hover {
+      cursor: hand;
+      cursor: pointer;
+      opacity: .9;
+  }
+  
+ .flexChild a.divLink {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        text-decoration: none            
+                        }
+
+#number1 a {background-image: url(../img/crunchie.jpg);
+            background-size: contain;      
+      }
+
+#number2 a{background-image: url(../img/tribute.jpg);
+      background-size: contain;}
+
+#number3 a {background-image: url(../img/treePic.jpg);
+      background-size: contain;}   
+
+
+
+
+#projectsWrapper {width: 100%;
+                  flex-wrap: wrap;
+                  }     
+
+
+
+#flexParent .flexChild .childWrapper a {
+      cursor: pointer;
+}
+#flexParent .flexChild .childWrapper {transition: all 0.3s ease-in-out;} 
+
+#skills {padding-left: 30%;}
+
+footer {text-align: center}
+
+@media screen and (max-width: 1300px)
+{}
+
+
+@media screen and (max-width: 970px)
+{}
