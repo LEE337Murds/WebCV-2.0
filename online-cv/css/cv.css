@@ -9,11 +9,11 @@ h1 {  color: white;
       text-align: center;
       }
 
-h2 {text-align: center;
+h2 {  text-align: center;
       color: white;
       }
 
-h3 {color: rgba(24, 22, 22, 0.863);
+h3 {  color: rgba(24, 22, 22, 0.863);
       font-size: 40px;
       font-weight: bold;
       text-decoration: underline;
@@ -21,7 +21,8 @@ h3 {color: rgba(24, 22, 22, 0.863);
 }
 
 h4 {color: rgb(51, 48, 48)}
-   
+
+/* opacify hero background */
 header::before {background-image: url(http://www.princesswithabackpack.com/wp-content/uploads/2012/01/cape-grace.jpg); alt: Backdrop;
                 display: block;
                 background-size: cover;
@@ -46,9 +47,11 @@ header{height: 100vh;
        margin-bottom: 30px;
       }
 
-header p {color: white; text-align: center}
+header p {  color: white; 
+            text-align: center}
 
-hr{border-style: solid; border-color: white }
+hr{   border-style: solid; 
+      border-color: white }
 
 #aboutMe {text-align: left;
           margin: 50px 0px 0px 100px;
@@ -56,6 +59,8 @@ hr{border-style: solid; border-color: white }
           font-family:  'opensans-regular', sans-serif;
           color: white;
         }
+
+/* clearfix after about section */
 .clearfix::after {content: "";
                   clear: both;
                   display: table} 
@@ -68,8 +73,10 @@ hr{border-style: solid; border-color: white }
           float: right
         } 
                 
-#floatImage {float: left;
-            width: 40%} 
+#floatImage {     float: left;
+                  width: 40%} 
+
+/* image crop .profile-pic into circle */
 .image-cropper {
           width: 300px;
           height: 300px;
@@ -96,7 +103,7 @@ hr{border-style: solid; border-color: white }
 
 
 
-
+/* flex parent of project links */
       
 #flexParent {text-align: center;
             display: flex;
@@ -116,20 +123,20 @@ hr{border-style: solid; border-color: white }
             text-align: center
             }
  
-.flexChild:hover {
-      cursor: hand;
-      cursor: pointer;
-      opacity: .9;
+.flexChild:hover {cursor: hand;
+                  cursor: pointer;
+                  opacity: .9;
   }
   
- .flexChild a.divLink {
-                        position: absolute;
+ .flexChild a.divLink { position: absolute;
                         width: 100%;
                         height: 100%;
                         top: 0;
                         left: 0;
                         text-decoration: none            
                         }
+
+/* 3 project images */
 
 #number1 a {background-image: url(../img/crunchie.jpg);
             background-size: contain;      
@@ -150,14 +157,18 @@ hr{border-style: solid; border-color: white }
 
 
 
-#flexParent .flexChild .childWrapper a {
-      cursor: pointer;
-}
+#flexParent .flexChild .childWrapper a {cursor: pointer;}
 #flexParent .flexChild .childWrapper {transition: all 0.3s ease-in-out;} 
 
-#skills {padding-left: 30%;}
+#skills {   padding-left: 30%;
+            color: white;     
+      }
 
-footer {text-align: center}
+footer {    text-align: center;
+            color: white;
+}
+
+/* media query */
 
 @media screen and (max-width: 1300px)
 {}
